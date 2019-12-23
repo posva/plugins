@@ -85,10 +85,10 @@ importers:
       '@babel/plugin-syntax-dynamic-import': 7.7.4_@babel+core@7.7.7
       '@babel/plugin-transform-runtime': 7.7.6_@babel+core@7.7.7
       '@babel/preset-env': 7.7.7_@babel+core@7.7.7
+      '@rollup/plugin-json': 4.0.1_rollup@1.27.14
       ava: 2.4.0
       rimraf: 2.7.1
       rollup: 1.27.14
-      rollup-plugin-json: 4.0.0
       source-map: 0.6.1
     specifiers:
       '@babel/core': ^7.7.4
@@ -98,10 +98,10 @@ importers:
       '@babel/plugin-syntax-dynamic-import': ^7.7.4
       '@babel/plugin-transform-runtime': ^7.7.4
       '@babel/preset-env': ^7.7.4
+      '@rollup/plugin-json': ^4.0.0
       ava: ^2.4.0
       rimraf: ^2.6.3
       rollup: ^1.27.5
-      rollup-plugin-json: ^4.0.0
       rollup-pluginutils: ^2.8.2
       source-map: ^0.6.1
   packages/beep:
@@ -1815,6 +1815,15 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-Z65CtEVWv40+ri4CvmswyhtuUtki9yP5p0UJN/GyCKKyU4jRuDS9CG0ZuV7/XuS7zGkoajyE7E4XBEaC4GW62A==
+  /@rollup/plugin-json/4.0.1_rollup@1.27.14:
+    dependencies:
+      rollup: 1.27.14
+      rollup-pluginutils: 2.8.2
+    dev: true
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-soxllkhOGgchswBAAaTe7X9G80U2tjjHvXv0sBrriLJcC/89PkP59iTrKPOfbz3SjX088mKDmMhAscuyLz8ZSg==
   /@rollup/pluginutils/3.0.0_rollup@1.27.13:
     dependencies:
       estree-walker: 0.6.1
@@ -6802,13 +6811,6 @@ packages:
       rollup: '>=0.56.0'
     resolution:
       integrity: sha512-DTZOvRoiVIHHLFBCL4pFxOaJt8pagxsVldEXBOn6wl3/V21wVaj17HFfyzTsQUuou3sZL3lEJZVWKPFblJfI6w==
-  /rollup-plugin-json/4.0.0:
-    dependencies:
-      rollup-pluginutils: 2.8.2
-    deprecated: This module has been deprecated and is no longer maintained. Please use @rollup/plugin-json.
-    dev: true
-    resolution:
-      integrity: sha512-hgb8N7Cgfw5SZAkb3jf0QXii6QX/FOkiIq2M7BAQIEydjHvTyxXHQiIzZaTFgx1GK0cRCHOCBHIyEkkLdWKxow==
   /rollup-plugin-node-resolve/5.2.0:
     dependencies:
       '@types/resolve': 0.0.8
